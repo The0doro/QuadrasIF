@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="banner">
+    <div class="logo">
+        <img src="logo-ifrs.png" alt="Logo IFRS">
+    </div>
+    <div class="titulo">Sistema de Agendamento IFRS</div>
+    <a href="index.html" class="btn-sair">Sair</a>
+</div>
+
+<div class="menu">
+    <a href="index.html">Início</a>
+    <a href="cadastro.html">Login</a>
+    <a href="agendamento.html" class="active">Agendamento</a>
+    <a href="horarios.html">Horários</a>
+</div>
+
+<div class="container">
+    <h2>Agendamento da Quadra</h2>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="data">Data (dias úteis):</label>
+        <input type="date" id="data" name="data" required>
+
+        <label for="horario">Horário:</label>
+        <select id="horario" name="horario" required>
+            <option value="">Selecione um horário</option>
+            <option value="8h">08:00</option>
+            <option value="9h">09:00</option>
+            <option value="10h">10:00</option>
+            <option value="11h">11:00</option>
+            <option value="12h">12:00</option>
+            <option value="13h">13:00</option>
+            <option value="14h">14:00</option>
+            <option value="15h">15:00</option>
+            <option value="16h">16:00</option>
+            <option value="17h">17:00</option>
+            <option value="18h">18:00</option>
+            <option value="19h">19:00</option>
+            <option value="20h">20:00</option>
+        </select>
+
+        <label for="tipo">Tipo de Usuário:</label>
+        <select id="tipo" name="tipo" required>
+            <option value="servidor">Servidor</option>
+            <option value="estudante">Estudante</option>
+        </select>
+
+        <label for="obs">Observações:</label>
+        <textarea id="obs" name="obs" rows="3"></textarea>
+
+        <button type="submit">Salvar</button>
+        <button type="reset">Limpar</button>
+    </form>
+</div>
+</body>
+</html>
